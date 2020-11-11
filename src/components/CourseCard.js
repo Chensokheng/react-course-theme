@@ -20,10 +20,12 @@ export default function CourseCard({ course }) {
           placeholderSrc={process.env.PUBLIC_URL + '/logo192.png'}
           src={course.img}
           width="100%"
-          height="auto"
+          height="14rem"
+          className="object-cover object-center"
           alt=""
         />
-        <div className="p-2 font-poppins">
+
+        <div className="p-2 font-poppins mt-4">
           <h1 className=" font-bold text-3xl">{course.title}</h1>
           <p className="text-base text-gray-700 mt-2 mb-2">
             {course.author.name}
