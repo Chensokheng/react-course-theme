@@ -1,9 +1,9 @@
-import CourseContent from './components/CourseContent';
+import Routes from './routes/Routes';
 
 export default function App() {
   return (
     <div>
-      <CourseContent />
+      <Routes />
     </div>
   );
 }
