@@ -1,4 +1,4 @@
-# React-course-theme
+# React-course-theme [![Netlify Status](https://api.netlify.com/api/v1/badges/890b3eba-9328-4f0f-95e3-f1c21df95c2f/deploy-status)](https://app.netlify.com/sites/zen-mcnulty-a4a54f/deploys)
 
 React-course-theme is platform for someone who want to create online course using react.js.
 
