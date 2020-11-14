@@ -46,7 +46,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qgALzm3NsbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![thumn](https://user-images.githubusercontent.com/52232579/99140141-876a9080-2671-11eb-9cf8-f187234c680b.jpg)](https://youtu.be/qgALzm3NsbE)
 
 ## License
 
