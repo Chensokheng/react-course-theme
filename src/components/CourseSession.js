@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import CourseContent from './CourseContent';
 import { useEffect } from 'react';
 
-export default function Class() {
+export default function CourseSession() {
   const location = useLocation();
   const course = location.state.course;
   const content = location.state.content;

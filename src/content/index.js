@@ -4,9 +4,9 @@ const content = {
       author: {
         name: 'Daily Web Coding',
         about:
-          " Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to creat digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on simproving my chops one design problem at a time.",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
         profile:
-          'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80',
+          'https://avatars3.githubusercontent.com/u/52232579?s=400&u=ce3ec8fc83aca637f2966ca13e729edb3afcea28&v=4',
       },
       content: [
         {

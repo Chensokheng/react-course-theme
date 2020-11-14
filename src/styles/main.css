@@ -340,8 +340,7 @@ a {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-svg {
+img {
   display: block;
   vertical-align: middle;
 }
@@ -406,14 +405,6 @@ a {
   flex-wrap: wrap;
 }
 
-.items-center{
-  align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
-}
-
 .font-poppins{
   font-family: Poppins;
 }
@@ -424,10 +415,6 @@ a {
 
 .font-bold{
   font-weight: 700;
-}
-
-.h-6{
-  height: 1.5rem;
 }
 
 .h-screen{
@@ -540,10 +527,6 @@ a {
   color: rgba(74, 85, 104, var(--text-opacity));
 }
 
-.w-6{
-  width: 1.5rem;
-}
-
 .w-11\/12{
   width: 91.666667%;
 }
@@ -626,6 +609,13 @@ a {
   }
 
   .md\:w-10\/12{
+    width: 83.333333%;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .lg\:w-10\/12{
     width: 83.333333%;
   }
 }

@@ -1,6 +1,6 @@
 import CourseCard from './CourseCard';
 import content from '../content';
-export default function Courses() {
+export default function ListOfCourses() {
   return (
     <div className="flex flex-wrap m-2">
       {content.courses.map((course, index) => {

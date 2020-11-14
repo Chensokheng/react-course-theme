@@ -17,16 +17,14 @@ export default function CourseDetail() {
         height="auto"
         className="mx-auto w-full md:h-72 object-center object-cover"
       />
-      <div>
-        <div className="md:w-8/12 mx-auto">
-          <div className=" w-11/12 mx-auto mb-20">
-            <h1 className="text-6xl font-bold">{course.title}</h1>
-            <h2 className="text-lg text-gray-700">{course.author.name}</h2>
-            <h1 className="text-3xl mt-10 font-medium">Description</h1>
-            <p className="text-lg text-gray-600">{course.description}</p>
-            <CourseContent course={course} />
-            <AuthorInfo author={course.author} />
-          </div>
+      <div className="w-full lg:w-10/12 mx-auto">
+        <div className=" w-11/12 mx-auto mb-20">
+          <h1 className="text-6xl font-bold">{course.title}</h1>
+          <h2 className="text-lg text-gray-700">{course.author.name}</h2>
+          <h1 className="text-3xl mt-10 font-medium">Description</h1>
+          <p className="text-lg text-gray-600">{course.description}</p>
+          <CourseContent course={course} />
+          <AuthorInfo author={course.author} />
         </div>
       </div>
     </div>

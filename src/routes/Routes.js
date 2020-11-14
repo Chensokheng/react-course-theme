@@ -1,15 +1,14 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Loading from '../components/Loading';
 
 const CourseDetail = lazy(() =>
   import(/* webpackChunkName: "CourseDetail" */ '../components/CourseDetail')
 );
-const Class = lazy(() =>
-  import(/* webpackChunkName: "Class" */ '../components/Class')
+const CourseSession = lazy(() =>
+  import(/* webpackChunkName: "CourseSession" */ '../components/CourseSession')
 );
-const Courses = lazy(() =>
-  import(/* webpackChunkName: "Courses" */ '../components/Courses')
+const ListOfCourses = lazy(() =>
+  import(/* webpackChunkName: "ListOfCourses" */ '../components/ListOfCourses')
 );
 
 export default function Routes() {
@@ -17,9 +16,13 @@ export default function Routes() {
     <Router>
       <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
-          <Route path="/" component={Courses} exact />
+          <Route path="/" component={ListOfCourses} exact />
           <Route path="/course/:title" component={CourseDetail} exact />
-          <Route path="/course/:title/:classTitle" component={Class} exact />
+          <Route
+            path="/course/:title/:classTitle"
+            component={CourseSession}
+            exact
+          />
         </Switch>
       </Suspense>
     </Router>
