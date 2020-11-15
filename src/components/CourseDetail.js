@@ -1,11 +1,14 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import CourseContent from '../components/CourseContent';
 import AuthorInfo from './AuthorInfo';
+import content from '../content';
 export default function CourseDetail() {
-  const location = useLocation();
-  const course = location.state.course;
+  let slug = useParams();
+  const course = content.courses.find(value=>{
+    return value.title=slug.title;
+  });
 
   return (
     <div className="w-full md:w-10/12 mx-auto font-poppins">
