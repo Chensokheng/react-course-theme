@@ -7,7 +7,7 @@ import content from '../content';
 export default function CourseDetail() {
   let slug = useParams();
   const course = content.courses.find(value=>{
-    return value.title=slug.title;
+    return value.title===slug.title;
   });
 
   return (

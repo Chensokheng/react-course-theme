@@ -1,14 +1,21 @@
 import ReactPlayer from 'react-player';
 import Linkify from 'react-linkify';
-import { useLocation } from 'react-router-dom';
 import CourseContent from './CourseContent';
 import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import content1 from '../content';
 
 export default function CourseSession() {
-  const location = useLocation();
-  const course = location.state.course;
-  const content = location.state.content;
-  const number = location.state.number;
+  let slug = useParams();
+  const course = content1.courses.find(value=>{
+    return value.title===slug.title;
+  });
+  let number;
+  const content = course.content.find((value,index)=>{
+    number=index;
+    return value.title===slug.classTitle;
+    });
+
   useEffect(() => {
     window.scrollTo(0, 0);
   });
